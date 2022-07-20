@@ -27,7 +27,7 @@ Console.WriteLine("Длина отрезка = " + GetLength(x1, y1, z1, x2, y2,
 
  double GetLength(int x, int y, int z, int x2, int y2, int z2)
  {
-    double Distance = Math.Sqrt((x2-x)*(x2-x) + (y2-y)*(y2-y) + (z2-z)*(z2-z));
+    double Distance = Math.Sqrt((x2-x)*(x2-x)) + ((y2-y)*(y2-y)) + ((z2-z)*(z2-z));
     
     return Distance;
  }

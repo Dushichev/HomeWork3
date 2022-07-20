@@ -1,18 +1,19 @@
-﻿/* Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+﻿/* Напишите программу, которая принимает на вход 
+число (N) и выдаёт таблицу кубов чисел от 1 до N.
 
 3 -> 1, 8, 27
 5 -> 1, 8, 27, 64, 125*/
 
-Console.WriteLine("Введите число (N)");
+Console.WriteLine("Введите число N");
 int numN = int.Parse(Console.ReadLine());
 
 
-for( int i = 1; i < numN + 1; i++)
+for (int i = 1; i < numN + 1; i++)
 {
-    int Cube = i*i*i;
-    Console.WriteLine( "возведённое в куб " + i + " = " + Cube);
+    double Cube = Math.Pow(i, 3);
+    Console.WriteLine("возведённое в куб " + i + " = " + Cube);
 }
 
 
- 
+
 
